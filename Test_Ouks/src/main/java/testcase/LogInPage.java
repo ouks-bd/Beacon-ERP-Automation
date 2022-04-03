@@ -26,10 +26,10 @@ String baseUrl="http://test.beacontech.xyz/";
 		
 		
 		//log_IN
-		driver.findElement(By.id("UserName")).sendKeys("shoeb");
+		driver.findElement(By.id("UserName")).sendKeys("******");
 		//Thread.sleep(2000);
 		
-		driver.findElement(By.id("Password")).sendKeys("floydshoeb$");
+		driver.findElement(By.id("Password")).sendKeys("******");
 		//Thread.sleep(2000);
 		
 		driver.findElement(By.className("col-xs-4")).click();
