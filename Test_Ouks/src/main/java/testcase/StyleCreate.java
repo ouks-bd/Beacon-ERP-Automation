@@ -32,6 +32,10 @@ String baseUrl="http://test.beacontech.xyz/";
 		
 		driver.findElement(By.className("col-xs-4")).click();
 		 
+		driver.get("http://test.beacontech.xyz/merchandising/order");
+		driver.findElement(By.id("iconName")).click();
+		Thread.sleep(2000); 
+		
 		
 }
 }
