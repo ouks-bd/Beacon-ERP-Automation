@@ -5,6 +5,8 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
+import pom.Page_Object_Model;
+
 public class LogInPage extends driver{
 	
 String baseUrl="http://test.beacontech.xyz/";
@@ -23,17 +25,16 @@ String baseUrl="http://test.beacontech.xyz/";
 		//Assert.assertEquals("My Stores", actualTitleOfTheSite);
 		
 		Thread.sleep(3000);
-		
+		Page_Object_Model user=new Page_Object_Model();
 		
 		//log_IN
-		driver.findElement(By.id("UserName")).sendKeys("******");
-		//Thread.sleep(2000);
+		driver.findElement(By.id("UserName")).sendKeys(user.username);
 		
-		driver.findElement(By.id("Password")).sendKeys("******");
+		driver.findElement(By.id("Password")).sendKeys(user.password);
 		//Thread.sleep(2000);
 		
 		driver.findElement(By.className("col-xs-4")).click();
-		//Thread.sleep(2000); 
+		Thread.sleep(2000); 
 	
 	
 	}
