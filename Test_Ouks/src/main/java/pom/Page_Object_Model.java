@@ -17,7 +17,7 @@ public class Page_Object_Model {
 	}
 	
 	public void GetStyle() {
-	    List<String> givenList = Arrays.asList("Baby Pyjama", "Men's Pyjama", "Boy's Shirt","Men's Shirt");
+	    List<String> givenList = Arrays.asList("Baby Pyjama", "Men's Pyjama", "Boy's Shirt","Men's Shirt","boys knitted shirt");
 	    Random rand = new Random();
 	    StyleName  = givenList.get(rand.nextInt(givenList.size()));
 	}
