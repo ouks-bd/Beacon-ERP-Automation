@@ -12,8 +12,8 @@ public class Page_Object_Model {
 	public String StyleName;
 	
 	public Page_Object_Model() {
-		username="**";
-		password ="**$";
+		username="shoeb";
+		password ="******";
 	}
 	
 	public void GetStyle() {

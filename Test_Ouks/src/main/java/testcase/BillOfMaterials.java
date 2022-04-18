@@ -20,12 +20,15 @@ String baseUrl="http://test.beacontech.xyz/";
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
 
+		
 		Page_Object_Model user=new Page_Object_Model();
 		driver.findElement(By.id("UserName")).sendKeys(user.username);
 		driver.findElement(By.id("Password")).sendKeys(user.password);
 		driver.findElement(By.className("col-xs-4")).click();
 		
-		driver.get("http://test.beacontech.xyz/Merchandising/OrderView/608");
+		driver.get("http://test.beacontech.xyz/Merchandising/StyleView/769");
+		
+		
 		
 		WebElement ItemFK_2 = driver.findElement(By.id("ItemFK_2"));
 		Select BOM_Fabric  =new Select(ItemFK_2);
@@ -42,6 +45,7 @@ String baseUrl="http://test.beacontech.xyz/";
 		
 		
 		//driver.findElement(By.id("vmBOM.GSM")).clear();
+	
 		driver.findElement(By.xpath("//input[@name='vmBOM.GSM']")).sendKeys("160");
 		Thread.sleep(2000);
 		
@@ -64,6 +68,7 @@ String baseUrl="http://test.beacontech.xyz/";
         Thread.sleep(2000);
         
         driver.findElement(By.id("btnsave")).click();
+        Thread.sleep(2000);
         
 }
 }
