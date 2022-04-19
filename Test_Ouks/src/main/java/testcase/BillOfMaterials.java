@@ -65,7 +65,7 @@ String baseUrl="http://test.beacontech.xyz/";
         //driver.findElement(By.id("vmBOM.UnitPrice")).clear();
         WebElement UnitPrice=driver.findElement(By.name("vmBOM.UnitPrice"));
         UnitPrice.sendKeys("10");
-        Thread.sleep(2000);
+        
         
         driver.findElement(By.id("btnsave")).click();
         Thread.sleep(2000);

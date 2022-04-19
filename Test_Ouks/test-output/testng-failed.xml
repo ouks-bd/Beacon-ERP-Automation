@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcase.StyleCreate">
+      <class name="testcase.BillOfMaterials">
         <methods>
           <include name="close"/>
-          <include name="locatorlearning"/>
           <include name="setDriver"/>
+          <include name="locatorlearning"/>
         </methods>
-      </class> <!-- testcase.StyleCreate -->
+      </class> <!-- testcase.BillOfMaterials -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
