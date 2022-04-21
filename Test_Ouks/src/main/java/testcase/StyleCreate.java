@@ -51,7 +51,7 @@ String baseUrl="http://test.beacontech.xyz/";
 		driver.findElement(By.id("txt2")).clear();
 		driver.findElement(By.id("txt2")).sendKeys("2022-04-03");
 		driver.findElement(By.id("txt5")).sendKeys("2022");
-		driver.findElement(By.id("Commission")).sendKeys("5");
+		driver.findElement(By.id("Commission")).sendKeys("2");
 		driver.findElement(By.id("txt6")).sendKeys("Automation");
 		
 		driver.findElement(By.id("btnsave")).click();
