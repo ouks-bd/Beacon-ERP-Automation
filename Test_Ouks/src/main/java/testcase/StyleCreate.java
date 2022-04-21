@@ -47,7 +47,7 @@ String baseUrl="http://test.beacontech.xyz/";
 		Select select =new Select(element);
 		select.selectByValue("3");
 
-		driver.findElement(By.id("txt4")).sendKeys("PO24032022");
+		driver.findElement(By.id("txt4")).sendKeys("PO21042022");
 		driver.findElement(By.id("txt2")).clear();
 		driver.findElement(By.id("txt2")).sendKeys("2022-04-03");
 		driver.findElement(By.id("txt5")).sendKeys("2022");
