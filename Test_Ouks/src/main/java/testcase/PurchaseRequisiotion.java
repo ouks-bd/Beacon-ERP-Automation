@@ -25,6 +25,8 @@ public class PurchaseRequisiotion extends driver {
 	driver.findElement(By.className("col-xs-4")).click();
 	
 	driver.get("http://test.beacontech.xyz/procurement/procurementstylepurchaserequisitionslave");
+	
+	driver.findElement(By.id("//input[@id='txtRequisitionDate']")).sendKeys("2022-04-03");
 }
 }
 
