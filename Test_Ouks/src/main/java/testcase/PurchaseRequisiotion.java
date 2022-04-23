@@ -23,6 +23,8 @@ public class PurchaseRequisiotion extends driver {
 	driver.findElement(By.id("UserName")).sendKeys(user.username);
 	driver.findElement(By.id("Password")).sendKeys(user.password);
 	driver.findElement(By.className("col-xs-4")).click();
+	
+	driver.get("http://test.beacontech.xyz/procurement/procurementstylepurchaserequisitionslave");
 }
 }
 
