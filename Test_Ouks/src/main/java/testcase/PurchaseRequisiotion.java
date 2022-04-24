@@ -37,8 +37,6 @@ public class PurchaseRequisiotion extends driver {
 	Thread.sleep(5000);
 	
 	
-	//WebElement PrType = driver.findElement(By.xpath("//*[@class=\"form-control ddlReset"]")); 
-	//WebElement Pr = driver.findElement(By.className("form-control ddlReset"));
 	WebElement Pr = driver.findElement(By.name("RequisitionTypeEnumFK"));
 	Select PrTypeProcurement  =new Select(Pr);
 	PrTypeProcurement.selectByValue("1");
@@ -50,16 +48,14 @@ public class PurchaseRequisiotion extends driver {
 	PrStyleBom.selectByVisibleText("KIK/00015A/20/08/17/P121330/Baby Boy Knitted Set, Shirt+Trouser");
 	Thread.sleep(5000);
 	
-//	WebElement PrStyleSelect = driver.findElement(By.id("txtRequisitionQuantity_0"));
-//	Select PrStyleSelectBom  =new Select(PrStyleSelect);
-//	PrStyleSelectBom.selectByValue("0.00450");
+
 	
 	driver.findElement(By.id("select_all")).click();
 //	driver.findElement(By.id("txtRequisitionQuantity_0"));
 //	driver.findElement(By.id("DataListPartial_0__Flag"));
 //	driver.findElement(By.id("DataListPartial_1__Flag"));
 	
-	
+	driver.findElement(By.id("btnsave")).click(); 
 	
 	Thread.sleep(5000);
 	
