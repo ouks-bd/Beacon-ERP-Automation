@@ -29,24 +29,22 @@ public class PurchaseRequisiotion extends driver {
 	driver.get("http://test.beacontech.xyz/procurement/procurementstylepurchaserequisitionslave");
 	
 	driver.findElement(By.id("txtRequisitionDate")).sendKeys("2022-04-03");
-	Thread.sleep(5000);
+	
 	
 	WebElement PrOrigin = driver.findElement(By.id("ddlProcurementOriginTypeEnumFK"));
 	Select PrTypeBom  =new Select(PrOrigin);
 	PrTypeBom.selectByValue("2");
-	Thread.sleep(5000);
 	
 	
 	WebElement Pr = driver.findElement(By.name("RequisitionTypeEnumFK"));
 	Select PrTypeProcurement  =new Select(Pr);
 	PrTypeProcurement.selectByValue("1");
-	Thread.sleep(5000);
 	
 	
 	WebElement PrStyle = driver.findElement(By.id("ddlMerchandisingStyleID"));
 	Select PrStyleBom  =new Select(PrStyle);
 	PrStyleBom.selectByVisibleText("KIK/00015A/20/08/17/P121330/Baby Boy Knitted Set, Shirt+Trouser");
-	Thread.sleep(5000);
+
 	
 
 	
@@ -57,6 +55,19 @@ public class PurchaseRequisiotion extends driver {
 	
 	driver.findElement(By.id("btnsave")).click(); 
 	
+	Thread.sleep(5000);
+	
+	driver.get("http://test.beacontech.xyz/procurement/procurementpurchaserequisitionlist");
+	
+	
+	WebElement checkbox = driver.findElement(By.linkText("Submit"));
+    checkbox.click();
+    
+    //driver.findElement(By.id("btnsave")).click();
+    driver.findElement(By.className("submitOrDraftText"));
+    
+    //need to input pr quantity also click submit button on the ongoing pr
+			
 	Thread.sleep(5000);
 	
 		
