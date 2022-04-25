@@ -27,8 +27,9 @@ String baseUrl="http://test.beacontech.xyz/";
 	driver.findElement(By.id("Password")).sendKeys(user.password);
 	driver.findElement(By.className("col-xs-4")).click();
 	
-	driver.get("http://romo.beacontech.xyz/procurement/procurementpurchaseorderslave");
 	
+	driver.get("http://romo.beacontech.xyz/procurement/procurementpurchaseorderslave");
+	Thread.sleep(5000);
 	WebElement POOrigin = driver.findElement(By.id("ddlProcurementOriginTypeEnumFK"));
 	Select PrTypeBom  =new Select(POOrigin);
 	PrTypeBom.selectByValue("2");
