@@ -39,6 +39,8 @@ String baseUrl="http://test.beacontech.xyz/";
 	Select POTypeProcurement  =new Select(POtype);
 	POTypeProcurement.selectByValue("1");
 	
+	driver.findElement(By.name("DeliveryDate")).sendKeys("2022-04-03");
+	
 	
 	Thread.sleep(5000);
 	
