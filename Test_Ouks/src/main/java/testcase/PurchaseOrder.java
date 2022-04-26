@@ -50,8 +50,6 @@ String baseUrl="http://test.beacontech.xyz/";
 	Select suplierpay =new Select(suplierpayment);
 	suplierpay.selectByValue("1");
 	
-	
-	
 	WebElement CurrencyFK = driver.findElement(By.id("ddlCommon_CurrencyFK"));
 	Select Currency =new Select(CurrencyFK);
 	Currency.selectByValue("1");
