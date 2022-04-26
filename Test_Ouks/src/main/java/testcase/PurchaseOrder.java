@@ -45,6 +45,11 @@ String baseUrl="http://test.beacontech.xyz/";
 	Select supliername =new Select(suplier);
 	supliername.selectByValue("1");
 	
+	
+	WebElement suplierpayment = driver.findElement(By.id("ddlSupplierPaymentMethodEnumFK"));
+	Select suplierpay =new Select(suplierpayment);
+	suplierpay.selectByValue("1");
+	
 	Thread.sleep(5000);
 	
 	
