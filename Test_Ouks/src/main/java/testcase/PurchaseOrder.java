@@ -41,6 +41,9 @@ String baseUrl="http://test.beacontech.xyz/";
 	
 	driver.findElement(By.name("DeliveryDate")).sendKeys("2022-04-03");
 	
+	WebElement suplier = driver.findElement(By.id("ddlCommon_SupplierFK"));
+	Select supliername =new Select(suplier);
+	supliername.selectByValue("1");
 	
 	Thread.sleep(5000);
 	
