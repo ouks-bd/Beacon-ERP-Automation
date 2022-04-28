@@ -55,7 +55,7 @@ String baseUrl="http://test.beacontech.xyz/";
 	Currency.selectByValue("1");
 	
 	driver.findElement(By.id("txtAttention")).sendKeys("ERP test");
-	
+	driver.findElement(By.id("txtDeliveryAddress")).sendKeys("Mouchak, Kalikoir, Gazipur-1751, Bangladesh");
 	
 	
 	Thread.sleep(5000);
