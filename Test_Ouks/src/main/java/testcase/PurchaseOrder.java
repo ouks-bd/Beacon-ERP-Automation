@@ -54,6 +54,10 @@ String baseUrl="http://test.beacontech.xyz/";
 	Select Currency =new Select(CurrencyFK);
 	Currency.selectByValue("1");
 	
+	driver.findElement(By.id("txtAttention")).sendKeys("ERP test");
+	
+	
+	
 	Thread.sleep(5000);
 	
 	
