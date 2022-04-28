@@ -61,12 +61,28 @@ String baseUrl="http://test.beacontech.xyz/";
 	Select TermsAndConditionid =new Select(TermsAndCondition);
 	TermsAndConditionid.selectByValue("1");
 	
-	//driver.findElement(By.id("ddlProcurement_PurchaseRequisitionFK"));
+	
 	
 	WebElement PurchaseRequisitionDropdown = driver.findElement(By.name("Procurement_PurchaseRequisitionFK"));
 	Select PurchaseRequisitionDropdownSelect =new Select(PurchaseRequisitionDropdown);
 	PurchaseRequisitionDropdownSelect.selectByValue("2419");
 	
+	//DataListPartial_0__Flag (for singel checkbox)
+	
+	driver.findElement(By.id("select_all")).click();
+	Thread.sleep(5000);
+	
+	
+//	driver.findElement(By.name("DataListPartial_0__PurchaseQuantity")).clear();
+//	driver.findElement(By.name("DataListPartial_0__PurchaseQuantity")).sendKeys("1");
+//	
+////	driver.findElement(By.id("DataListPartial_0__PurchaseQuantity")).clear();
+////	driver.findElement(By.id("DataListPartial_0__PurchaseQuantity")).sendKeys("1");
+////	driver.findElement(By.id("DataListPartial_1__PurchaseQuantity")).clear();
+////	driver.findElement(By.id("DataListPartial_1__PurchaseQuantity")).sendKeys("1");
+
+	driver.findElement(By.id("btnsave")).click(); 
+
 	
 	
 	
