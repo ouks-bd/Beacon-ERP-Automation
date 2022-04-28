@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-26T14:32:31 BDT" name="Default suite" finished-at="2022-04-26T14:32:42 BDT" duration-ms="11503">
+  <suite started-at="2022-04-28T13:55:44 BDT" name="Default suite" finished-at="2022-04-28T13:56:01 BDT" duration-ms="16615">
     <groups>
     </groups>
-    <test started-at="2022-04-26T14:32:31 BDT" name="Default test" finished-at="2022-04-26T14:32:42 BDT" duration-ms="11503">
+    <test started-at="2022-04-28T13:55:44 BDT" name="Default test" finished-at="2022-04-28T13:56:01 BDT" duration-ms="16615">
       <class name="testcase.PurchaseOrder">
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:testcase.PurchaseOrder@33d512c1]" started-at="2022-04-26T14:32:26 BDT" name="setDriver" finished-at="2022-04-26T14:32:31 BDT" duration-ms="5139" status="PASS">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:testcase.PurchaseOrder@33d512c1]" started-at="2022-04-28T13:55:40 BDT" name="setDriver" finished-at="2022-04-28T13:55:44 BDT" duration-ms="4219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="locatorlearning()[pri:0, instance:testcase.PurchaseOrder@33d512c1]" started-at="2022-04-26T14:32:31 BDT" name="locatorlearning" finished-at="2022-04-26T14:32:42 BDT" duration-ms="11455" status="PASS">
+        <test-method signature="locatorlearning()[pri:0, instance:testcase.PurchaseOrder@33d512c1]" started-at="2022-04-28T13:55:45 BDT" name="locatorlearning" finished-at="2022-04-28T13:56:01 BDT" duration-ms="16457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- locatorlearning -->
-        <test-method is-config="true" signature="close()[pri:0, instance:testcase.PurchaseOrder@33d512c1]" started-at="2022-04-26T14:32:42 BDT" name="close" finished-at="2022-04-26T14:32:43 BDT" duration-ms="323" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:testcase.PurchaseOrder@33d512c1]" started-at="2022-04-28T13:56:01 BDT" name="close" finished-at="2022-04-28T13:56:01 BDT" duration-ms="330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
