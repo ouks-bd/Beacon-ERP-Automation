@@ -67,6 +67,13 @@ String baseUrl="http://test.beacontech.xyz/";
 	Select PurchaseRequisitionDropdownSelect =new Select(PurchaseRequisitionDropdown);
 	PurchaseRequisitionDropdownSelect.selectByValue("2419");
 	
+	driver.findElement(By.id("select_all")).click();
+	
+	driver.findElement(By.id("DataListPartial_0__PurchaseQuantity")).sendKeys("1");
+	driver.findElement(By.id("DataListPartial_1__PurchaseQuantity")).sendKeys("1");
+	
+	
+	
 	
 	
 	
