@@ -3,6 +3,8 @@ package testcase;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import pom.Page_Object_Model;
@@ -27,6 +29,22 @@ String baseUrl="http://test.beacontech.xyz/";
 	
 	driver.get("http://test.beacontech.xyz/warehouse/warehouseporeceivingslave");
 
+	
+	driver.findElement(By.id("Challan")).sendKeys("Challan 02");
+	
+	Thread.sleep(5000);
+	
+//	driver.findElement(By.id("txtPOCID")).sendKeys("PO2204-O-P000043");
+//	driver.findElement(By.id("txtPOCID")).click();
+//	Thread.sleep(5000);
+	
+	WebElement POOrigin = driver.findElement(By.id("txtPOCID"));
+	Select PoTypeBom  =new Select(POOrigin);
+	PoTypeBom.selectByValue("3156");
+	
+
+	Thread.sleep(5000);
+	
 	
 }
 }

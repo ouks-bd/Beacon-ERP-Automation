@@ -2,53 +2,30 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-28T14:52:01 BDT" name="Default suite" finished-at="2022-04-28T14:52:15 BDT" duration-ms="13976">
+  <suite started-at="2022-04-30T20:35:10 BDT" name="Default suite" finished-at="2022-04-30T20:35:23 BDT" duration-ms="12960">
     <groups>
     </groups>
-    <test started-at="2022-04-28T14:52:01 BDT" name="Default test" finished-at="2022-04-28T14:52:15 BDT" duration-ms="13976">
-      <class name="testcase.PurchaseOrder">
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:testcase.PurchaseOrder@33d512c1]" started-at="2022-04-28T14:51:57 BDT" name="setDriver" finished-at="2022-04-28T14:52:01 BDT" duration-ms="4434" status="PASS">
+    <test started-at="2022-04-30T20:35:10 BDT" name="Default test" finished-at="2022-04-30T20:35:23 BDT" duration-ms="12960">
+      <class name="testcase.PoReceving">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:testcase.PoReceving@33d512c1]" started-at="2022-04-30T20:35:06 BDT" name="setDriver" finished-at="2022-04-30T20:35:10 BDT" duration-ms="4319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="locatorlearning()[pri:0, instance:testcase.PurchaseOrder@33d512c1]" started-at="2022-04-28T14:52:01 BDT" name="locatorlearning" finished-at="2022-04-28T14:52:15 BDT" duration-ms="13947" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        <test-method signature="locatorlearning()[pri:0, instance:testcase.PoReceving@33d512c1]" started-at="2022-04-30T20:35:10 BDT" name="locatorlearning" finished-at="2022-04-30T20:35:23 BDT" duration-ms="12858" status="FAIL">
+          <exception class="org.openqa.selenium.support.ui.UnexpectedTagNameException">
             <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=100.0.4896.127)
+              <![CDATA[Element should have been "select" but was "input"
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'SHOEB', ip: '192.168.99.33', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [624bf0f719412292e8d51c37b99538a5, clickElement {id=82354fa0-3716-4831-a8bd-26431a7f6434}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49883}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49883/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (624bf0f719412292e8d51c37b99538a5)] -> id: select_all]
-Session ID: 624bf0f719412292e8d51c37b99538a5]]>
+System info: host: 'SHOEB', ip: '172.26.48.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=100.0.4896.127)
+              <![CDATA[org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "input"
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'SHOEB', ip: '192.168.99.33', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [624bf0f719412292e8d51c37b99538a5, clickElement {id=82354fa0-3716-4831-a8bd-26431a7f6434}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49883}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49883/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (624bf0f719412292e8d51c37b99538a5)] -> id: select_all]
-Session ID: 624bf0f719412292e8d51c37b99538a5
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at testcase.PurchaseOrder.locatorlearning(PurchaseOrder.java:72)
+System info: host: 'SHOEB', ip: '172.26.48.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:49)
+at testcase.PoReceving.locatorlearning(PoReceving.java:42)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -79,15 +56,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.support.ui.UnexpectedTagNameException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- locatorlearning -->
-        <test-method is-config="true" signature="close()[pri:0, instance:testcase.PurchaseOrder@33d512c1]" started-at="2022-04-28T14:52:15 BDT" name="close" finished-at="2022-04-28T14:52:16 BDT" duration-ms="456" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:testcase.PoReceving@33d512c1]" started-at="2022-04-30T20:35:23 BDT" name="close" finished-at="2022-04-30T20:35:23 BDT" duration-ms="476" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- testcase.PurchaseOrder -->
+      </class> <!-- testcase.PoReceving -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
