@@ -42,10 +42,13 @@ String baseUrl="http://test.beacontech.xyz/";
 	Select PoTypeBom  =new Select(POOrigin);
 	PoTypeBom.selectByValue("3156");
 	
+	
+	
 
 	Thread.sleep(5000);
 	
 	
+
 }
 }
 

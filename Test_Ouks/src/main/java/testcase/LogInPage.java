@@ -24,6 +24,8 @@ String baseUrl="http://test.beacontech.xyz/";
 		System.out.println("The Title of the site is: "+ actualTitleOfTheSite);
 		//Assert.assertEquals("My Stores", actualTitleOfTheSite);
 		
+		
+		
 		Thread.sleep(3000);
 		Page_Object_Model user=new Page_Object_Model();
 		
