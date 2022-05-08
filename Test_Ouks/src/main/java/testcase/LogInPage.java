@@ -1,8 +1,13 @@
 package testcase;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.annotations.Test;
 
 import pom.Page_Object_Model;
@@ -36,6 +41,13 @@ String baseUrl="http://test.beacontech.xyz/";
 		//Thread.sleep(2000);
 		
 		driver.findElement(By.className("col-xs-4")).click();
+		
+		
+		
+	  
+	   
+	
+		
 		Thread.sleep(2000); 
 	
 	
