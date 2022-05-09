@@ -47,6 +47,16 @@ String baseUrl="http://test.beacontech.xyz/";
 //		if(Password.getText().contains("Invalid login or password."))
 //	        System.out.println("Test passed but login failed.");
 		
+		if(actualUrl.equalsIgnoreCase(expectedUrl))
+		{
+		System.out.println("Test passed");
+		}
+		else
+		{
+		System.out.println("Test failed");
+		}
+		
+		
 		
 		driver.findElement(By.className("col-xs-4")).click();
 		
