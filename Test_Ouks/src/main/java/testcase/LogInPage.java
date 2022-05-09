@@ -8,6 +8,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import pom.Page_Object_Model;
@@ -17,7 +18,7 @@ public class LogInPage extends driver{
 String baseUrl="http://test.beacontech.xyz/";
 	
 	@Test
-	public void locatorlearning() throws InterruptedException {
+	public void test () throws InterruptedException {
 		
 		driver.get(baseUrl);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -32,13 +33,20 @@ String baseUrl="http://test.beacontech.xyz/";
 		
 		
 		Thread.sleep(3000);
-		Page_Object_Model user=new Page_Object_Model();
+		Page_Object_Model user = new Page_Object_Model();
 		
 		//log_IN
 		driver.findElement(By.id("UserName")).sendKeys(user.username);
 		
-		driver.findElement(By.id("Password")).sendKeys(user.password);
-		//Thread.sleep(2000);
+		//driver.findElement(By.id("Password")).sendKeys(user.password);
+		
+		WebElement Password = driver.findElement(By.id("Password"));
+		Password.click();
+		Password.sendKeys("floydshoeb$");
+		
+		if(Password.getText().contains("Invalid login or password."))
+	        System.out.println("Test passed but login failed.");
+		
 		
 		driver.findElement(By.className("col-xs-4")).click();
 		
