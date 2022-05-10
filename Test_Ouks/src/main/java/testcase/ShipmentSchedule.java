@@ -10,6 +10,7 @@ import pom.Page_Object_Model;
 
 public class ShipmentSchedule extends driver{
 	
+	String baseUrl="http://test.beacontech.xyz/";	
 	@Test
 	public void test () throws InterruptedException {
 		
