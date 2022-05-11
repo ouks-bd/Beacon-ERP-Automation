@@ -3,13 +3,16 @@ package testcase;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import pom.Page_Object_Model;
 
 public class SuplierInvoice extends driver {
 
-	String baseUrl="http://test.beacontech.xyz/";	
+	String baseUrl="http://test.beacontech.xyz/";
+	
 	@Test
 	public void test () throws InterruptedException {
 		
@@ -27,11 +30,25 @@ public class SuplierInvoice extends driver {
 		
 		driver.findElement(By.className("col-xs-4")).click();
 		
-		driver.get("http://test.beacontech.xyz/Merchandising/StyleShipment/796");
-				Thread.sleep(5000);
+		driver.get("http://test.beacontech.xyz/procurement/procurementpurchaseinvoiceslave");
+		
+		driver.findElement(By.id("txtSupplierInvoiceNo")).sendKeys("for test");
+		
+		
+		WebElement paymentmethod = driver.findElement(By.id("ddlSupplierPaymentMethodEnumFK"));
+		Select payment  =new Select(paymentmethod);
+		payment.selectByValue("1");
+		
+		
+		WebElement currency  = driver.findElement(By.id("ddlCurrencyFK"));
+		Select currencytype  =new Select(currency);
+		currencytype.selectByValue("2");
+		
+		
+		Thread.sleep(5000);
 		
 }
 }
 
 	
-}
+
