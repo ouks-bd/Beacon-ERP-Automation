@@ -44,6 +44,9 @@ public class SuplierInvoice extends driver {
 		Select currencytype  =new Select(currency);
 		currencytype.selectByValue("2");
 		
+		WebElement supplierselect  = driver.findElement(By.id("ddlCommon_SupplierFK"));
+		Select suppliername    =new Select(supplierselect);
+		suppliername.selectByValue("1");
 		
 		Thread.sleep(5000);
 		
