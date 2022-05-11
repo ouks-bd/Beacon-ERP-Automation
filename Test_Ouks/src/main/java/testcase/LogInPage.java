@@ -1,16 +1,7 @@
 package testcase;
-
-import java.io.File;
-import java.io.IOException;
 import java.time.Duration;
-
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-
 import pom.Page_Object_Model;
 
 public class LogInPage extends driver{

@@ -1,9 +1,7 @@
 package testcase;
 
 import java.time.Duration;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import pom.Page_Object_Model;
@@ -29,8 +27,7 @@ public class ShipmentSchedule extends driver{
 		driver.findElement(By.className("col-xs-4")).click();
 		
 		driver.get("http://test.beacontech.xyz/Merchandising/StyleShipment/796");
-		
-		Thread.sleep(5000);
+				Thread.sleep(5000);
 		
 }
 }
