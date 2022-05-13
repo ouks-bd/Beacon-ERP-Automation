@@ -29,6 +29,7 @@ String baseUrl="http://test.beacontech.xyz/";
 		driver.findElement(By.className("col-xs-4")).click();
 		
 		
+		
 
 }
 }
