@@ -27,5 +27,8 @@ String baseUrl="http://test.beacontech.xyz/";
 		driver.findElement(By.id("Password")).sendKeys(user.password);
 		
 		driver.findElement(By.className("col-xs-4")).click();
+		
+		
 
+}
 }
