@@ -28,8 +28,14 @@ String baseUrl="http://test.beacontech.xyz/";
 		
 		driver.findElement(By.className("col-xs-4")).click();
 		
+		driver.get("http://test.beacontech.xyz/Merchandising/OrderView/629");
 		
 		
+		/** need to add prposelect id   */
+		driver.get("http://test.beacontech.xyz/Merchandising/ProcuredStyle/796\"");
+
+		
+		Thread.sleep(5000);
 
 }
 }
