@@ -2,6 +2,8 @@ package testcase;
 
 import java.time.Duration;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import pom.Page_Object_Model;
@@ -31,6 +33,20 @@ public class ShipmentSchedule extends driver{
 		driver.findElement(By.id("vmStyleSetPack_SetPackName")).sendKeys("Pant");
 		driver.findElement(By.id("vmStyleSetPack_Quantity")).sendKeys("1");
 		driver.findElement(By.id("btnsave"));
+		
+		
+		WebElement country = driver.findElement(By.id("ddlCountryFK"));
+		Select destination  =new Select(country);
+		destination.selectByValue("2");
+		
+		WebElement port = driver.findElement(By.id("ddlPortFK"));
+		Select destinationport  =new Select(port);
+		destinationport.selectByValue("2");
+		
+		driver.findElement(By.id("vmShipmentSchedule_DestinationNo")).sendKeys("3489");
+		
+		//driver.findElement(By.id("ColorFK")).sendKeys("3489");
+		
 		Thread.sleep(5000);
 }
 }

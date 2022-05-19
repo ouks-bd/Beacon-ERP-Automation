@@ -13,7 +13,7 @@ public class Page_Object_Model {
 	
 	public Page_Object_Model() {
 		username="shoeb";
-		password ="***";
+		password ="floydshoeb$";
 	}
 	
 	public void GetStyle() {
