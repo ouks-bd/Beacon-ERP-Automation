@@ -27,7 +27,10 @@ public class ShipmentSchedule extends driver{
 		driver.findElement(By.className("col-xs-4")).click();
 		
 		driver.get("http://test.beacontech.xyz/Merchandising/StyleShipment/796");
-				Thread.sleep(5000);
-		
+		Thread.sleep(5000);
+		driver.findElement(By.id("vmStyleSetPack_SetPackName")).sendKeys("Pant");
+		driver.findElement(By.id("vmStyleSetPack_Quantity")).sendKeys("1");
+		driver.findElement(By.id("btnsave"));
+		Thread.sleep(5000);
 }
 }

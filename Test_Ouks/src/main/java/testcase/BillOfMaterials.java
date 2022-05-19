@@ -16,6 +16,8 @@ String baseUrl="http://test.beacontech.xyz/";
 	@Test
 	public void locatorlearning() throws InterruptedException {
 		
+		//WebDriver driver;
+		
 		driver.get(baseUrl);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
