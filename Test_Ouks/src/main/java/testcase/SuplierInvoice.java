@@ -64,6 +64,11 @@ public class SuplierInvoice extends driver {
 		driver.findElement(By.id("btnsave")).click();
 		
 		
+		driver.get("http://test.beacontech.xyz/procurement/procurementpurchaseinvoicelist");
+		
+		//a[@id='2862']//i[contains(text(),'Submit')]
+		
+		driver.findElement(By.id("2862")).click();
 		
 		
 		Thread.sleep(5000);
