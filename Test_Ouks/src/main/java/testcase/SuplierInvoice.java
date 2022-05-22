@@ -48,6 +48,13 @@ public class SuplierInvoice extends driver {
 		Select suppliername    =new Select(supplierselect);
 		suppliername.selectByValue("1");
 		
+		WebElement ponumber  = driver.findElement(By.id("ddlProcurementPurchaseOrderFK"));
+		Select selectnumber    =new Select(ponumber);
+		selectnumber.selectByValue("3117");
+		
+		
+		driver.findElement(By.id("DataListPartial_0__InvoiceQuantity")).sendKeys("1");
+		
 		Thread.sleep(5000);
 		
 }
