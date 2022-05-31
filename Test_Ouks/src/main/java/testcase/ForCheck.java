@@ -31,7 +31,7 @@ String baseUrl="http://test.beacontech.xyz/";
 
 		driver.get("http://test.beacontech.xyz/procurement/procurementpurchaseinvoicelist");
 		
-		driver.findElement(By.id("2862")).click();
+		driver.findElement(By.name("Submit"));
 
 		Thread.sleep(5000);
 }
