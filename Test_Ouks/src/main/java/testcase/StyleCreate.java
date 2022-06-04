@@ -26,6 +26,7 @@ String baseUrl="http://test.beacontech.xyz/";
 		System.out.println("The Title of the site is: "+ actualTitleOfTheSite);
 		//Assert.assertEquals("My Stores", actualTitleOfTheSite);
 		
+		
 		Thread.sleep(3000);
 		
 		
@@ -41,6 +42,7 @@ String baseUrl="http://test.beacontech.xyz/";
 		
 		driver.get("http://test.beacontech.xyz/merchandising/order");
 		driver.findElement(By.id("iconName")).click();
+		
 		
 		
 		WebElement element = driver.findElement(By.id("ddlBuyer"));
