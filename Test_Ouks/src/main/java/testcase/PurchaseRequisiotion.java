@@ -49,9 +49,6 @@ public class PurchaseRequisiotion extends driver {
 
 	
 	driver.findElement(By.id("select_all")).click();
-//	driver.findElement(By.id("txtRequisitionQuantity_0"));
-//	driver.findElement(By.id("DataListPartial_0__Flag"));
-//	driver.findElement(By.id("DataListPartial_1__Flag"));
 	
 	driver.findElement(By.id("btnsave")).click(); 
 	
