@@ -86,7 +86,7 @@ String baseUrl="http://test.beacontech.xyz/";
 			driver.findElement(By.id("txtFinishDIA")).clear();
 			driver.findElement(By.id("txtFinishDIA")).sendKeys("20");
 			Thread.sleep(5000);
-			driver.findElement(By.id("btnsave")).click();
+			//driver.findElement(By.id("btnsave")).click();
 		
 }
 }
