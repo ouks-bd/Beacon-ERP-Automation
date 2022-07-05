@@ -9,18 +9,20 @@ import pom.Page_Object_Model;
 
 public class ForCheck extends driver {
 	
-String baseUrl="http://test.beacontech.xyz/";
+//String baseUrl="http://test.beacontech.xyz/";
 	
 	@Test
 	public void test () throws InterruptedException {
+		Page_Object_Model user = new Page_Object_Model();
 		
-		driver.get(baseUrl);
+		driver.get(user.baseUrl);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
 	
 		
-		Page_Object_Model user = new Page_Object_Model();
 		
+		
+		//for (int i = 0; i < 50; i++){
 		//log_IN
 		driver.findElement(By.id("UserName")).sendKeys(user.username);
 		
@@ -29,10 +31,15 @@ String baseUrl="http://test.beacontech.xyz/";
 		driver.findElement(By.className("col-xs-4")).click();
 		
 
-		driver.get("http://test.beacontech.xyz/procurement/procurementpurchaseinvoicelist");
+		//driver.get(user.baseUrl+"procurement/procurementpurchaseinvoicelist");
 		
-		driver.findElement(By.name("Submit"));
-
+		driver.get(user.PoInvoice);
+		
+		//System.out.println("passed");
+		System.out.println("GeeksforGeeks");
+		
+		
+		
 		Thread.sleep(5000);
 }
 }

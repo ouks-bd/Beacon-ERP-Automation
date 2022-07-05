@@ -5,15 +5,20 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
+import testcase.driver;
+
 public class Page_Object_Model {
 		
 	public String username;
 	public String password;
 	public String StyleName;
 	
+	public String baseUrl="http://test.beacontech.xyz/";
+	public String PoInvoice =this.baseUrl+"procurement/procurementpurchaseinvoicelist";
+	
 	public Page_Object_Model() {
 		username="shoeb";
-		password ="****";
+		password ="$$$$";
 	}
 	
 	public void GetStyle() {
