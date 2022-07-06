@@ -20,6 +20,8 @@ public class Page_Object_Model {
 	public String BomLink = "http://test.beacontech.xyz/Merchandising/StyleView/769";
 	public String Order = "http://test.beacontech.xyz/merchandising/order";
 	public String storein ="http://test.beacontech.xyz/warehouse/warehouseporeceivingslave";
+	public String Pr ="http://test.beacontech.xyz/procurement/procurementpurchaserequisitionlist";
+	public String Po="http://test.beacontech.xyz/procurement/procurementpurchaseorderlist";
 	
 	public Page_Object_Model() {
 		username="shoeb";

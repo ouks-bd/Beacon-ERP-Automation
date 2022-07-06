@@ -9,17 +9,16 @@ import pom.Page_Object_Model;
 
 public class PrPoList extends driver {
 	
-String baseUrl="http://test.beacontech.xyz/";
+
 	
 	@Test
 	public void test () throws InterruptedException {
+		Page_Object_Model user = new Page_Object_Model();
 		
-		driver.get(baseUrl);
+		driver.get(user.baseUrl);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
 	
-		
-		Page_Object_Model user = new Page_Object_Model();
 		
 		//log_IN
 		driver.findElement(By.id("UserName")).sendKeys(user.username);
@@ -28,11 +27,12 @@ String baseUrl="http://test.beacontech.xyz/";
 		
 		driver.findElement(By.className("col-xs-4")).click();
 		
-		driver.get("http://test.beacontech.xyz/Merchandising/OrderView/629");
-		
+		driver.get(user.Pr);
+		driver.get(user.Po);
 		
 		/** need to add prposelect id   */
-		driver.get("http://test.beacontech.xyz/Merchandising/ProcuredStyle/796\"");
+		
+		
 
 		
 		Thread.sleep(5000);

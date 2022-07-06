@@ -12,23 +12,22 @@ import pom.Page_Object_Model;
 public class PurchaseOrder extends driver {
 	
 	
-String baseUrl="http://test.beacontech.xyz/";
-	
+	Page_Object_Model user=new Page_Object_Model();
 	
 	@Test
 	public void locatorlearning() throws InterruptedException {
 
-	driver.get(baseUrl);
+	driver.get(user.baseUrl);
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	driver.manage().window().maximize();
 
 
-	Page_Object_Model user=new Page_Object_Model();
+	
 	driver.findElement(By.id("UserName")).sendKeys(user.username);
 	driver.findElement(By.id("Password")).sendKeys(user.password);
 	driver.findElement(By.className("col-xs-4")).click();
 	
-	driver.get("http://test.beacontech.xyz/procurement/procurementpurchaseorderslave");
+	driver.get(user.Po);
 	
 	WebElement POOrigin = driver.findElement(By.id("ddlProcurementOriginTypeEnumFK"));
 	Select PoTypeBom  =new Select(POOrigin);
@@ -83,8 +82,6 @@ String baseUrl="http://test.beacontech.xyz/";
 
 	driver.findElement(By.id("btnsave")).click(); 
 
-	
-	
 	
 	
 	Thread.sleep(5000);
