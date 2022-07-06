@@ -30,8 +30,6 @@ public class ForCheck extends driver {
 		
 		driver.findElement(By.className("col-xs-4")).click();
 		
-
-		//driver.get(user.baseUrl+"procurement/procurementpurchaseinvoicelist");
 		
 		driver.get(user.PoInvoice);
 		

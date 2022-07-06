@@ -18,6 +18,7 @@ public class Page_Object_Model {
 	
 	public String BofLink = "http://test.beacontech.xyz/Merchandising/YarnCalculation/788";
 	public String BomLink = "http://test.beacontech.xyz/Merchandising/StyleView/769";
+	public String Order = "http://test.beacontech.xyz/merchandising/order";
 	
 	public Page_Object_Model() {
 		username="shoeb";

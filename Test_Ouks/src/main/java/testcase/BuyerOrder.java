@@ -7,16 +7,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
+import pom.Page_Object_Model;
+
 public class BuyerOrder extends driver {
 
 	
-	
-String baseUrl="http://test.beacontech.xyz/";
-	
 	@Test
 	public void locatorlearning() throws InterruptedException {
-		
-		driver.get(baseUrl);
+		Page_Object_Model user=new Page_Object_Model();
+		driver.get(user.baseUrl);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
 		
@@ -30,15 +29,12 @@ String baseUrl="http://test.beacontech.xyz/";
 		
 		
 		//log_IN
-		driver.findElement(By.id("UserName")).sendKeys("***");
-	
-		driver.findElement(By.id("Password")).sendKeys("***");
-		
+		driver.findElement(By.id("UserName")).sendKeys(user.username);
+		driver.findElement(By.id("Password")).sendKeys(user.password);
 		driver.findElement(By.className("col-xs-4")).click();
 		 
-	
 		
-		driver.get("http://test.beacontech.xyz/merchandising/order");
+		driver.get(user.Order);
 		driver.findElement(By.id("iconName")).click();
 		
 		WebElement element = driver.findElement(By.id("ddlBuyer"));
