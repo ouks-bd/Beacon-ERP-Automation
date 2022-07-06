@@ -17,6 +17,7 @@ public class Page_Object_Model {
 	public String PoInvoice =this.baseUrl+"procurement/procurementpurchaseinvoicelist";
 	
 	public String BofLink = "http://test.beacontech.xyz/Merchandising/YarnCalculation/788";
+	public String BomLink = "http://test.beacontech.xyz/Merchandising/StyleView/769";
 	
 	public Page_Object_Model() {
 		username="shoeb";

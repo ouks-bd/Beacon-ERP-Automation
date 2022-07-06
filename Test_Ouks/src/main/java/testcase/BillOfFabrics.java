@@ -12,8 +12,6 @@ import pom.Page_Object_Model;
 public class BillOfFabrics extends driver {
 
 	
-//String baseUrl="http://test.beacontech.xyz/";
-	
 	@Test
 	public void locatorlearning() throws InterruptedException {
 		Page_Object_Model user = new Page_Object_Model();
@@ -60,7 +58,6 @@ public class BillOfFabrics extends driver {
 			//problem_in_count
 			
 			WebElement yarncount= driver.findElement(By.name("Raw_ItemFK"));
-			//WebElement yarncount= driver.findElement(By.id("Raw_ItemFK"));
 			Select yarncountitem =new Select(yarncount);
 			yarncountitem.selectByValue("5252");
 	        
