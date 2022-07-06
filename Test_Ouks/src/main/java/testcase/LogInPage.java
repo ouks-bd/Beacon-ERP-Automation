@@ -6,12 +6,14 @@ import pom.Page_Object_Model;
 
 public class LogInPage extends driver{
 	
-String baseUrl="http://test.beacontech.xyz/";
+
 	
 	@Test
 	public void test () throws InterruptedException {
 		
-		driver.get(baseUrl);
+		Page_Object_Model user=new Page_Object_Model();
+		
+		driver.get(user.baseUrl);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
 		
@@ -24,7 +26,6 @@ String baseUrl="http://test.beacontech.xyz/";
 		
 		
 		Thread.sleep(3000);
-		Page_Object_Model user = new Page_Object_Model();
 		
 		//log_IN
 		driver.findElement(By.id("UserName")).sendKeys(user.username);

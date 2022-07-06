@@ -15,6 +15,7 @@ public class BuyerOrder extends driver {
 	@Test
 	public void locatorlearning() throws InterruptedException {
 		Page_Object_Model user=new Page_Object_Model();
+		
 		driver.get(user.baseUrl);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
