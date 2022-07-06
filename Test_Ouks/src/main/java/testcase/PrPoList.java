@@ -30,11 +30,8 @@ public class PrPoList extends driver {
 		driver.get(user.Pr);
 		driver.get(user.Po);
 		
-		/** need to add prposelect id   */
 		
-		
-
-		
+	
 		Thread.sleep(5000);
 
 }

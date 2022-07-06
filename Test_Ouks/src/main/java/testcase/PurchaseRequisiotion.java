@@ -54,7 +54,7 @@ public class PurchaseRequisiotion extends driver {
 	
 	Thread.sleep(5000);
 	
-	driver.get("http://test.beacontech.xyz/procurement/procurementpurchaserequisitionlist");
+	driver.get(user.Pr);
 	
 	
 	WebElement checkbox = driver.findElement(By.linkText("Submit"));
