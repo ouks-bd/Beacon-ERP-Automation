@@ -12,23 +12,24 @@ import pom.Page_Object_Model;
 public class BillOfFabrics extends driver {
 
 	
-String baseUrl="http://test.beacontech.xyz/";
+//String baseUrl="http://test.beacontech.xyz/";
 	
 	@Test
 	public void locatorlearning() throws InterruptedException {
+		Page_Object_Model user = new Page_Object_Model();
 		
-		driver.get(baseUrl);
+		driver.get(user.baseUrl);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
 
 		
-		Page_Object_Model user=new Page_Object_Model();
+		//Page_Object_Model user=new Page_Object_Model();
 		driver.findElement(By.id("UserName")).sendKeys(user.username);
 		driver.findElement(By.id("Password")).sendKeys(user.password);
 		driver.findElement(By.className("col-xs-4")).click();
 		
 		
-		driver.get("http://test.beacontech.xyz/Merchandising/YarnCalculation/788");
+		driver.get(user.BofLink);
 		
 		 WebElement Bof_Item = driver.findElement(By.id("ddlCommonRaw_FabricItemFK"));
 			Select BOF_Fabric  =new Select(Bof_Item );

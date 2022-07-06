@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-04T13:24:03 BDT" name="Default suite" finished-at="2022-07-04T13:24:37 BDT" duration-ms="34185">
+  <suite started-at="2022-07-06T11:47:18 BDT" name="Default suite" finished-at="2022-07-06T11:47:40 BDT" duration-ms="21233">
     <groups>
     </groups>
-    <test started-at="2022-07-04T13:24:03 BDT" name="Default test" finished-at="2022-07-04T13:24:37 BDT" duration-ms="34185">
-      <class name="testcase.SuplierInvoice">
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:testcase.SuplierInvoice@33d512c1]" started-at="2022-07-04T13:23:55 BDT" name="setDriver" finished-at="2022-07-04T13:24:03 BDT" duration-ms="7864" status="PASS">
+    <test started-at="2022-07-06T11:47:18 BDT" name="Default test" finished-at="2022-07-06T11:47:40 BDT" duration-ms="21233">
+      <class name="testcase.BillOfFabrics">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:testcase.BillOfFabrics@33d512c1]" started-at="2022-07-06T11:47:11 BDT" name="setDriver" finished-at="2022-07-06T11:47:18 BDT" duration-ms="7410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="test()[pri:0, instance:testcase.SuplierInvoice@33d512c1]" started-at="2022-07-04T13:24:03 BDT" name="test" finished-at="2022-07-04T13:24:37 BDT" duration-ms="33981" status="PASS">
+        <test-method signature="locatorlearning()[pri:0, instance:testcase.BillOfFabrics@33d512c1]" started-at="2022-07-06T11:47:18 BDT" name="locatorlearning" finished-at="2022-07-06T11:47:40 BDT" duration-ms="21167" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="close()[pri:0, instance:testcase.SuplierInvoice@33d512c1]" started-at="2022-07-04T13:24:37 BDT" name="close" finished-at="2022-07-04T13:24:37 BDT" duration-ms="381" status="PASS">
+        </test-method> <!-- locatorlearning -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcase.BillOfFabrics@33d512c1]" started-at="2022-07-06T11:47:40 BDT" name="close" finished-at="2022-07-06T11:47:41 BDT" duration-ms="887" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- testcase.SuplierInvoice -->
+      </class> <!-- testcase.BillOfFabrics -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
