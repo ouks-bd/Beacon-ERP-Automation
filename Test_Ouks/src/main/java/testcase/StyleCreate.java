@@ -11,12 +11,12 @@ import pom.Page_Object_Model;
 
 public class StyleCreate extends driver {
 	
-String baseUrl="http://test.beacontech.xyz/";
 	
 	@Test
 	public void locatorlearning() throws InterruptedException {
+		Page_Object_Model user=new Page_Object_Model();
 		
-		driver.get(baseUrl);
+		driver.get(user.baseUrl);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
 		
@@ -30,7 +30,7 @@ String baseUrl="http://test.beacontech.xyz/";
 		Thread.sleep(3000);
 		
 		
-		Page_Object_Model user=new Page_Object_Model();
+		
 		
 		//log_IN
 		driver.findElement(By.id("UserName")).sendKeys(user.username);
@@ -40,7 +40,7 @@ String baseUrl="http://test.beacontech.xyz/";
 		driver.findElement(By.className("col-xs-4")).click();
 		
 		
-		driver.get("http://test.beacontech.xyz/merchandising/order");
+		driver.get(user.Order);
 		driver.findElement(By.id("iconName")).click();
 		
 		

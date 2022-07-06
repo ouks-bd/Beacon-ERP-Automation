@@ -22,6 +22,9 @@ public class Page_Object_Model {
 	public String storein ="http://test.beacontech.xyz/warehouse/warehouseporeceivingslave";
 	public String Pr ="http://test.beacontech.xyz/procurement/procurementpurchaserequisitionlist";
 	public String Po="http://test.beacontech.xyz/procurement/procurementpurchaseorderlist";
+	public String order ="http://test.beacontech.xyz/merchandising/order";
+	public String CreateInvoice="http://test.beacontech.xyz/procurement/procurementpurchaseinvoiceslave";
+	public String Invoice ="http://test.beacontech.xyz/procurement/procurementpurchaseinvoicelist";
 	
 	public Page_Object_Model() {
 		username="shoeb";

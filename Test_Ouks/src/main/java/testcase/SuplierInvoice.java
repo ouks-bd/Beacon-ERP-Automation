@@ -11,17 +11,17 @@ import pom.Page_Object_Model;
 
 public class SuplierInvoice extends driver {
 
-	String baseUrl="http://test.beacontech.xyz/";
 	
 	@Test
 	public void test () throws InterruptedException {
+		Page_Object_Model user = new Page_Object_Model();
 		
-		driver.get(baseUrl);
+		driver.get(user.baseUrl);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
 	
 		
-		Page_Object_Model user = new Page_Object_Model();
+		
 		
 		//log_IN
 		driver.findElement(By.id("UserName")).sendKeys(user.username);
@@ -30,7 +30,7 @@ public class SuplierInvoice extends driver {
 		
 		driver.findElement(By.className("col-xs-4")).click();
 		
-		driver.get("http://test.beacontech.xyz/procurement/procurementpurchaseinvoiceslave");
+		driver.get(user.CreateInvoice);
 		
 		driver.findElement(By.id("txtSupplierInvoiceNo")).sendKeys("for test");
 		
@@ -64,7 +64,7 @@ public class SuplierInvoice extends driver {
 		driver.findElement(By.id("btnsave")).click();
 		
 		
-		driver.get("http://test.beacontech.xyz/procurement/procurementpurchaseinvoicelist");
+		driver.get(user.Invoice);
 		
 		
 		//need to submit the invoice
