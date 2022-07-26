@@ -71,14 +71,6 @@ public class PurchaseOrder extends driver {
 	driver.findElement(By.id("select_all")).click();
 	Thread.sleep(5000);
 	
-	
-//	driver.findElement(By.name("DataListPartial_0__PurchaseQuantity")).clear();
-//	driver.findElement(By.name("DataListPartial_0__PurchaseQuantity")).sendKeys("1");
-//	
-////	driver.findElement(By.id("DataListPartial_0__PurchaseQuantity")).clear();
-////	driver.findElement(By.id("DataListPartial_0__PurchaseQuantity")).sendKeys("1");
-////	driver.findElement(By.id("DataListPartial_1__PurchaseQuantity")).clear();
-////	driver.findElement(By.id("DataListPartial_1__PurchaseQuantity")).sendKeys("1");
 
 	driver.findElement(By.id("btnsave")).click(); 
 

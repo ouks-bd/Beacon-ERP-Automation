@@ -19,9 +19,6 @@ public class SuplierInvoice extends driver {
 		driver.get(user.baseUrl);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
-	
-		
-		
 		
 		//log_IN
 		driver.findElement(By.id("UserName")).sendKeys(user.username);

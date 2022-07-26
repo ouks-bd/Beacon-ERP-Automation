@@ -50,9 +50,9 @@ public class BuyerOrder extends driver {
 		driver.findElement(By.id("txt6")).sendKeys("Automation");
 		
 		driver.findElement(By.id("btnsave")).click(); 
-		//div[@class='col-lg-12']//button[@id='btnsave']
-		//driver.findElement(By.xpath("//ul[@class='treeview-menu active menu-open']")).click();
-		//System.out.println("Passed");
-		Thread.sleep(5000);
+		
+		
+		System.out.println("Passed");
+		Thread.sleep(9000);
 	}
 }

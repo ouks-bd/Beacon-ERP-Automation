@@ -38,6 +38,6 @@ public class ForCheck extends driver {
 		
 		
 		
-		Thread.sleep(5000);
+		Thread.sleep(9000);
 }
 }
